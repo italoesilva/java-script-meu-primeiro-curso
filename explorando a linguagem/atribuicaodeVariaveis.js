@@ -1,4 +1,4 @@
-console.log("Trabalhando com atrubuiçãi de variáveis");
+console.log("Trabalhando com atrubuição de variáveis");
 
 const idade = 29;
 let primeiroNome = "Italo";
