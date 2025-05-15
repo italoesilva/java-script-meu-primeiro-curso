@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo AJAX com JSON</title>
+</head>
+<body>
+  <h1>Buscar Usuário</h1>
+  <button onclick="buscarUsuario()">Buscar Dados</button>
+
+  <div id="resultado" style="margin-top: 20px;"></div>
+
+  <script>
+    function buscarUsuario() {
+      // Faz a requisição com fetch (AJAX moderno)
+      fetch("https://jsonplaceholder.typicode.com/users/1")
+        .then(resposta => resposta.json()) // converte a resposta em JSON
+        .then(dados => {
+          // Mostra os dados na tela
+          document.getElementById("resultado").innerHTML = `
+            <strong>Nome:</strong> ${dados.name} <br>
+            <strong>Email:</strong> ${dados.email} <br>
+            <strong>Empresa:</strong> ${dados.company.name}
+          `;
+        })
+        .catch(erro => {
+          console.log("Erro:", erro);
+        });
+    }
+  </script>
+</body>
+</html>

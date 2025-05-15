@@ -1,9 +1,9 @@
-function verificar(){ 
+function verificar(){ //Define a função verificar() que será chamada quando o botão for clicado. 
 
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
-    var res = document.querySelector('div#res')
+    var data = new Date() //cria um objeto com a data atual do sistema (computador).
+    var ano = data.getFullYear() // extrai somente o ano atual, como 2025
+    var fano = document.getElementById('txtano') //pega o valor do campo onde o usuário digita o ano de nascimento.
+    var res = document.querySelector('div#res') //res pega a <div> onde o resultado será mostrado.
 
     if (fano.value.length == 0 || fano.value > ano){
         window.alert('[ERRO] Verifique os dados e tente novamente!')
