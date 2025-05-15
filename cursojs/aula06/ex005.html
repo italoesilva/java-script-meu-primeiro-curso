@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudos com DOOM</title>
+    <style>
+        body{
+            background-color: rgb(49, 49, 200);
+            color: white;
+            font: normal 10pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOOM</strong> em JavaScript</p>
+    <div id="msg">Clique Aqui</div>
+    <script>
+             var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        
+      //var d = window.document.getElementById('msg')
+      //d.style.background = 'green'
+      // d.innerText = 'Estou aguardando'
+     // window.document.getElementById('msg').innerText ='Olá'
+     //var d = window.document.getElementsByClassName('msg')[0]
+     //d.innerText ='Olá'
+    
+        var d = window.document.querySelector('div#msg')   
+        d.style.background ='black'
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+   
+        body{
+            background-color: blueviolet;
+            background-position: 10%;
+        }
+        
+       div#res {
+       background-color: rgb(24, 69, 114);
+       border: 10px;
+       
+    
+        }
+    </style>
+</head>
+<body>
+
+
+            <h1>Teste de Nacionalidade!</h1>
+
+    <strong> Onde você nasceu? </strong> 
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="Pressione Ok" onclick="pais()">
+    <div id="res"></div>
+    
+            <script>
+                function pais(){
+                var txt = window.document.querySelector(`input#txt`)
+                var txtv = String(txt.value).toLocaleLowerCase().trim()
+                var res = window.document.querySelector(`div#res`)
+
+                    res.innerHTML = 'Estou verificando...'
+
+                if (txtv.toLocaleLowerCase() === 'brasil' || txtv.toLocaleLowerCase() === 'br') { 
+
+                    res.innerHTML += '<p>Você é Brasileiro!</p>'
+                }else{
+                    res.innerHTML += '<p>Você é Estrangeiro!</p>'
+                }
+                }
+            </script>
+</body>
+</html>
