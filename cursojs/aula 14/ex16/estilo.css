@@ -1,35 +1,29 @@
 @charset "UTF-8";
 
 
-body{
-    background-color: rgb(66, 66, 236);
-    font: normal 15pt arial;
-   
-
+body {
+  font-family: Arial, sans-serif;
+  background-color: #287cd0;
+  padding: 20px;
+  text-align: center;
 }
 
-header{
-    color: white;
-    text-align: center;  /* CENTRALIZAR */
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: rgb(161, 133, 133);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-section{
-  background-color: white;
-  border-radius: 10px;   /* Borda arredondada */
-  padding: 15px;
-  width: 500px;
-  margin: auto;  /* Centralizar na tela */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.341);   /* BORDAS EM VOLTAS */
- 
-
-
-
-
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-footer{
-    color: white;
-    text-align: center;
-    font-style: italic;
-
+.tabuada {
+  margin-top: 20px;
+  text-align: left;
 }
