@@ -4,7 +4,6 @@
 body{
     background-color: rgb(66, 66, 236);
     font: normal 15pt arial;
-   
 
 }
 
@@ -20,9 +19,14 @@ section{
   width: 500px;
   margin: auto;  /* Centralizar na tela */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.341);   /* BORDAS EM VOLTAS */
- 
+} 
 
-
+div{
+    text-align: center;
+    font: arial 20pt black;
+    padding: 15px;
+    font-style: italic;
+}
 
 
 }
