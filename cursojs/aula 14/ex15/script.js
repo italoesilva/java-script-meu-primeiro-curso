@@ -1,25 +1,37 @@
-function contar () {
+function contar() {
 
-    let inicio = Number(document.querySelector("#inicio").value)
-    let fim = Number(document.querySelector("#fim").value)
-    let passo = Number(document.querySelector("#passo").value)
-    let res = document.querySelector("#resultado")
+let ini = document.getElementById('txti')
+let fim = document.getElementById('txtf')
+let passo = document.getElementById('txtp')
+let res = document.getElementById('res')
 
-    if (passo <= 0){
-        alert("[ERRO] Passo inválido! Considerando passo 1")
-        passo = 1
+if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+    res.innerHTML = 'IMPOSSÍVEL CONTAR!'
+    window.alert('[ERRO] FALTAM DADOS!')
+    
+    } else{
+    res.innerHTML = 'Contando...<br>'
+    let i = Number(ini.value)
+    let f = Number(fim.value)
+    let p = Number(passo.value)
+    if (p <= 0){
+        window.alert('Passo inválido! Considerando PASSO 1')
+         p = 1
     }
-
-    res.innerHTML = "Contando... <br>"
-
-    if (inicio < fim){
-        for (let c = inicio; c <= fim; c+= passo){
-            res.innerHTML += `${c} 👉`
+        if (i < f){
+         //CONTAGEM CRESCENTE 
+        for(let c = i; c <= f; c += p) {
+        res.innerHTML += `${c} 👉`
         }
+        
+
+            //CONTAGEM REGRESSIVA
     } else {
-        for (let c = inicio; c >= fim; c -= passo){
-            res.innerHTML +=  `${c} 👉`
+        for(let c =  i; c >= f; c -= p){
+            res.innerHTML += `${c}  👉`
         }
+        
     }
-    res.innerHTML += "🏁"
+     res.innerHTML += `✅`
 }
+} 
