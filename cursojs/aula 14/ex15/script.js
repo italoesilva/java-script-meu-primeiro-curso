@@ -27,7 +27,7 @@ if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
 
             //CONTAGEM REGRESSIVA
     } else {
-        for(let c =  i; c >= f; c -= p){
+        for(let c = i; c >= f; c -= p){
             res.innerHTML += `${c}  👉`
         }
         
