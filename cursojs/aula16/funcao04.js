@@ -7,3 +7,6 @@ function fatorial(n){
 }
 
 console.log(fatorial(5))
+
+
+//função4

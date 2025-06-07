@@ -7,3 +7,5 @@ function parimp(n){
 }
 
 console.log(parimp(221))
+
+//função1

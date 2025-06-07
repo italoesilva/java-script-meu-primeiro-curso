@@ -3,3 +3,6 @@ let v = function(x){
 }
 
 console.log(v(5))
+
+
+//função3

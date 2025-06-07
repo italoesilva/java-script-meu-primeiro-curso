@@ -3,3 +3,5 @@ function soma(n1=0, n2){
 }
 
 console.log(soma(7, 3))
+
+//função2
